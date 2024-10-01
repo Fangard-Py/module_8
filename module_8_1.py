@@ -1,10 +1,8 @@
 def add_everything_up(a, b):
     try:
-        a + b
+        return a + b
     except TypeError as exc:
-        print(f'{a}, {b}','-', exc)
-    else:
-        print(f'{a + b}')
+        return f'{a}, {b}', exc
 
 
 print(add_everything_up(123.456, 'строка'))
